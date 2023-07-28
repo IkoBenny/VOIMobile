@@ -7,7 +7,7 @@
         <property name="databaseName" value="VehiclesOfInterest"/>
         <property name="User" value="VehiclesOfInterest"/>
         <property name="Password" value="voi"/>
-        <property name="URL" value="jdbc:derby://localhost:1527/VehiclesOfInterest"/>
+        <property name="URL" value="jdbc:derby://localhost:1527/VehiclesOfInterest;create=true"/>
         <property name="driverClass" value="org.apache.derby.jdbc.ClientDriver"/>
     </jdbc-connection-pool>
     <jdbc-resource enabled="true" jndi-name="java:app/jdbc/VehiclesOfInterest" object-type="user" pool-name="derby_net_VehiclesOfInterest_VehiclesOfInterestPool"/>
