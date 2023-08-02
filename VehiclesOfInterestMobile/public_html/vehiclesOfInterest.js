@@ -68,5 +68,12 @@ alert("data " + request.responseText.toString());
               
           }; // end of fucntion
     } // end of refreshSales function
+    
+    function showTable () {
+         document.getElementById("VOIcontainer").style.display="block";
+         document.getElementById("VehiclesOfInterestdiv").style.display="block";
+         document.getElementById("VOITable").style.display="block";
+         document.getElementById("VOIShowButton").style.display="block";
+    }
 
 
