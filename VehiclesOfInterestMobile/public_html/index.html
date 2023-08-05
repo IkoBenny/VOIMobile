@@ -11,16 +11,40 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="vehiclesOfInterest.js"></script>
-
+        <style>
+            #VOIShowButton1,#VOIShowButton2 {
+                color: red;
+                background-color: yellow;
+                border:none;
+                border-color: black;
+                border-bottom: outset;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            #VOIShowButton1:hover,#VOIShowButton2:hover {
+                color: yellow;
+                background-color: black;
+                border-color: red;
+                font-size: 25px;
+            }
+            
+            #VOIShowButton1:focus,#VOIShowButton2:focus {
+                color: white;
+                background-color: black;
+                border-color: red;
+                font-size: 20px;
+            }
+        </style>
 
     </head>
     <body>
-        <div><button onclick="showTable()">VOI</button></div>
+        <div><button onclick="showTable()" id="VOIShowButton1">VOI</button></div>
         <div>
             <img id="logo" src="logo.jpg" height="50%" width="70%" alt="alt" />
         </div>
         <div id="VOIcontainer" style="display: none">Be on the lookout for:</div>
-        <button id="VOIShowButton" onclick="refreshVOI()" style="display: none">Refresh</button>
+        <button id="VOIShowButton2" onclick="refreshVOI()" style="display: none">Refresh</button>
         <div id="VehiclesOfInterestdiv" style="display: none">
            <table id="VOITable" border="1">
               <tr>
