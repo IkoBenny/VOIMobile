@@ -85,7 +85,8 @@ function showTable() {
     document.getElementById("VOIcontainer").style.display = "block";
     document.getElementById("VehiclesOfInterestdiv").style.display = "block";
     document.getElementById("VOITable").style.display = "block";
-    document.getElementById("VOIShowButton").style.display = "block";
+    document.getElementById("VOIShowButton1").style.display = "block";
+    document.getElementById("VOIShowButton2").style.display = "block";
 }
 
 
