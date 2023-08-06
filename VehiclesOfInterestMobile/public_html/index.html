@@ -12,7 +12,7 @@ and open the template in the editor.
 
         <script src="vehiclesOfInterest.js"></script>
         <style>
-            #VOIShowButton1,#VOIShowButton2 {
+            #VOIShowButton1,#VOIShowButton2, #SearchButton {
                 color: red;
                 background-color: yellow;
                 border:none;
@@ -22,14 +22,14 @@ and open the template in the editor.
                 font-size: 20px;
             }
             
-            #VOIShowButton1:hover,#VOIShowButton2:hover {
+            #VOIShowButton1:hover,#VOIShowButton2:hover, #SearchButton:hover {
                 color: yellow;
                 background-color: black;
                 border-color: red;
                 font-size: 25px;
             }
             
-            #VOIShowButton1:focus,#VOIShowButton2:focus {
+            #VOIShowButton1:focus,#VOIShowButton2:focus, #SearchButton:focus {
                 color: white;
                 background-color: black;
                 border-color: red;
@@ -39,7 +39,9 @@ and open the template in the editor.
 
     </head>
     <body>
-        <div><button onclick="showTable()" id="VOIShowButton1">VOI</button></div>
+        <div><button onclick="showTable()" id="VOIShowButton1" style="display: inline-block"  >VOI</button>
+        <button id="SearchButton" onclick="showTable()" style="display: inline-block">Search</button>
+        </div>
         <div>
             <img id="logo" src="logo.jpg" height="50%" width="70%" alt="alt" />
         </div>
