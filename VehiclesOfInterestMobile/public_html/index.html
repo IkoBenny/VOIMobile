@@ -14,7 +14,7 @@ and open the template in the editor.
         <style>
             #VOIShowButton1,#VOIShowButton2, #SearchButton {
                 color: red;
-                background-color: yellow;
+                background-color:goldenrod;
                 border:none;
                 border-color: black;
                 border-bottom: outset;
@@ -60,6 +60,10 @@ and open the template in the editor.
                 z-index: 20;
             }
             
+            body {
+                background-color: black;
+            }
+            
             td {
                 margin-top: 15px;
             }
@@ -68,10 +72,10 @@ and open the template in the editor.
     </head>
     <body>
         <div><button onclick="showTable()" id="VOIShowButton1" style="display: inline-block"  >VOI</button>
-        <button id="SearchButton" onclick="showTable()" style="display: inline-block">Search</button>
+        <button id="SearchButton" onclick="buttonSwap()" style="display: inline-block">Search</button>
         </div>
         <div>
-            <img id="logo" src="logo.jpg" height="300" width="300" alt="alt" />
+            <img id="logo" src="logo.png" height="300" width="300" alt="alt" />
         </div>
         <button id="VOIShowButton2" onclick="refreshVOI()" style="display: none">Refresh</button>
 
