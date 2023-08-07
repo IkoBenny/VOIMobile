@@ -134,8 +134,8 @@ function searchVOI() {
 
 function showTable() {
     var mspImg = document.getElementById('logo');
-    mspImg.style.height = '200px';
-    mspImg.style.width = '200px';
+    mspImg.style.height = '175px';
+    mspImg.style.width = '175px';
     document.getElementById("VOIcontainer").style.display= "block";
     //document.getElementById("VOIcontainer").style.width= "400px";
     document.getElementById("VehiclesOfInterestdiv").style.display = "block";
@@ -148,8 +148,8 @@ function showTable() {
 
 function buttonSwap() {
     var mspImg = document.getElementById('logo');
-    mspImg.style.height = '200px';
-    mspImg.style.width = '200px';
+    mspImg.style.height = '175px';
+    mspImg.style.width = '175px';
     document.getElementById("VOIcontainer").style.display= "block";
     //document.getElementById("VOIcontainer").style.width= "400px";
     document.getElementById("VehiclesOfInterestdiv").style.display = "block";
