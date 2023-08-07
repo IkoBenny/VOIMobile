@@ -74,7 +74,6 @@ function refreshVOI() {
             } // end of for loop
         }  // end of if statement
         request.close();
-
     }; // end of fucntion
 } // end of refreshSales function
 
@@ -131,6 +130,7 @@ function searchVOI() {
         }  // end of if statement
         request.close();
         showTable();
+        
     }; // end of fucntion
 } // end of refreshSales function
 
@@ -139,9 +139,11 @@ function showTable() {
     var mspImg = document.getElementById('logo');
     mspImg.style.height = '200px';
     mspImg.style.width = '200px';
-    document.getElementById("VOIcontainer").style.display = "block";
+    document.getElementById("VOIcontainer").style.display= "block";
+    document.getElementById("VOIcontainer").style.width= "94.7%";
     document.getElementById("VehiclesOfInterestdiv").style.display = "block";
-    document.getElementById("VOITable").style.display = "block";
+    //document.getElementById("VehiclesOfInterestdiv").style.width= "90%";
+    document.getElementById("VOITable").style.display = "table-row";
     document.getElementById("VOIShowButton1").style.display = "inline-block";
     document.getElementById("VOIShowButton2").style.display = "inline-block";
     document.getElementById("SearchButton").style.display = "inline-block";

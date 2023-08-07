@@ -35,6 +35,34 @@ and open the template in the editor.
                 border-color: red;
                 font-size: 20px;
             }
+            
+            #VOITable {
+                color: white;
+                background-color: black;
+                border-color: red;
+            }
+            
+            #VOIcontainer {
+               font-weight:100;
+                color: white;
+                background-color: black;
+                border-color: black;
+                border-bottom: outset;
+            }
+            
+            th {
+                top:0;
+                background-color: black;
+                color: white;
+                position:sticky;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                z-index: 20;
+            }
+            
+            td {
+                margin-top: 15px;
+            }
         </style>
 
     </head>
@@ -43,21 +71,22 @@ and open the template in the editor.
         <button id="SearchButton" onclick="showTable()" style="display: inline-block">Search</button>
         </div>
         <div>
-            <img id="logo" src="logo.jpg" height="50%" width="70%" alt="alt" />
+            <img id="logo" src="logo.jpg" height="300" width="300" alt="alt" />
         </div>
-        <div id="VOIcontainer" style="display: none">Be on the lookout for:</div>
         <button id="VOIShowButton2" onclick="refreshVOI()" style="display: none">Refresh</button>
+
         <div id="VehiclesOfInterestdiv" style="display: none">
+                    <span id="VOIcontainer" style="display: none">Be on the lookout for:</span>
            <table id="VOITable" border="1">
               <tr>
-                 <td>License Plate</td>
-                <td>Reason</td>
-                <td>Make</td>
-                <td>Model</td>
-                <td>Year</td>
-                <td>Color</td>
-                <td>Owner</td>
-                <td>Owner Phone</td>
+                <th>License Plate</th>
+                <th>Reason</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Color</th>
+                <th>Owner</th>
+                <th>Owner Phone</th>
               </tr>
            </table>
         </div>
