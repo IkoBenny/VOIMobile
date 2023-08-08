@@ -36,6 +36,7 @@ function refreshVOI() {
     var parser;
     var x, i;
     var vois, voi;
+
     request.open("GET", "http://localhost:8080/VehiclesOfInterestWebServices/webresources/model.vehicleofinterest", true);
     request.send();
     request.onreadystatechange = function () {
@@ -73,6 +74,7 @@ function refreshVOI() {
         }  // end of if statement
         request.close();
     }; // end of fucntion
+     
 } // end of refreshSales function
 
 function searchVOI() {
@@ -128,6 +130,7 @@ function searchVOI() {
         }  // end of if statement
         request.close();
         showTable();
+        
     }; // end of fucntion
 } // end of refreshSales function
 
@@ -144,18 +147,21 @@ function showTable() {
     document.getElementById("VOIShowButton1").style.display = "inline-block";
     document.getElementById("VOIShowButton2").style.display = "inline-block";
     document.getElementById("SearchButton").style.display = "inline-block";
+    document.getElementById("help").style.display = "inline-block";
 }
 
 function lightSwap () {
    document.getElementById("body").style.backgroundColor = "white";
    document.getElementById("VOITable").style.backgroundColor = "white";
    document.getElementById("VOITable").style.color = "black";
+   document.getElementById("help").style.display = "none";
 }
 
 function darkSwap () {
    document.getElementById("body").style.backgroundColor = "black";
    document.getElementById("VOITable").style.backgroundColor = "black";
    document.getElementById("VOITable").style.color = "white";
+    document.getElementById("help").style.display = "none";
 }
 
 function buttonSwap() {
@@ -168,10 +174,19 @@ function buttonSwap() {
     //document.getElementById("VehiclesOfInterestdiv").style.width= "90%";
     document.getElementById("VOITable").style.display = "table-row";
     document.getElementById("VOIShowButton1").style.display = "inline-block";
-     document.querySelector("#VOIShowButton2").innerHTML = "Search";
+    document.querySelector("#VOIShowButton2").innerHTML = "Search";
     document.getElementById("VOIShowButton2").style.display = "inline-block";
   
     document.getElementById("SearchButton").style.display = "inline-block";
 }
 
-
+function help(){
+    var mspImg = document.getElementById('logo');
+    mspImg.style.height = '175px';
+    mspImg.style.width = '175px';
+    document.getElementById("VOITable").style.display = "none";
+    document.getElementById("VehiclesOfInterestdiv").style.display = "none";
+    document.getElementById("VOIShowButton2").style.display = "none";
+    document.getElementById("help").style.display = "inline-block";
+    document.getElementById("helpCar").style.display = "inline-block";
+}
