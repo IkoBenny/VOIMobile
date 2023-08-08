@@ -146,6 +146,18 @@ function showTable() {
     document.getElementById("SearchButton").style.display = "inline-block";
 }
 
+function lightSwap () {
+   document.getElementById("body").style.backgroundColor = "white";
+   document.getElementById("VOITable").style.backgroundColor = "white";
+   document.getElementById("VOITable").style.color = "black";
+}
+
+function darkSwap () {
+   document.getElementById("body").style.backgroundColor = "black";
+   document.getElementById("VOITable").style.backgroundColor = "black";
+   document.getElementById("VOITable").style.color = "white";
+}
+
 function buttonSwap() {
     var mspImg = document.getElementById('logo');
     mspImg.style.height = '175px';
